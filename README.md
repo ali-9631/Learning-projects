@@ -1,1 +1,1 @@
-# Learning-projects (HTML/CSS)
+# Learning-projects Codecademy (HTML/CSS)
