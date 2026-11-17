@@ -13,18 +13,26 @@ Codeacademy 27 August - 10 September, 2026
 
 [About Dogs](./01.6%20Semantic.html)
 
-[Fashion log](./02.1%20Fashion%20Blog.html)
+[Vacation Spots](./02.1%20Selectors.html)
 
-[Fashion log](./02.2%20Fashion%20Blog.html)
+[Article: Soccer](./02.2%20Visual%20Rules.html)
 
-[Fashion log](./02.3%20Fashion%20Blog.html)
+[Article: News](02.3%20The%20Box%20Model.html)
 
-[Fashion log](./02.4%20Fashion%20Blog.html)
+[memory Test](02.4%20Changing%20the%20Box%20Model.html)
 
-[Fashion log](./02.5%20Fashion%20Blog.html)
+[Survey](02.5%20Display%20and%20Positioning.html)
 
-[Fashion log](./02.6%20Fashion%20Blog.html)
+[Colors](02.6%20Colors.css)
 
-[Fashion log](./02.7%20Fashion%20Blog.html)
+[Article: Typography](02.7%20Typography.html)
+ 
+
+
+
+
+
+
+
 
 
