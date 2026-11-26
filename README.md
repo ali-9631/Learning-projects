@@ -27,7 +27,7 @@ Codeacademy (Beginner HTML & CSS) 27 August - 10 September, 2026
 
 [Article: Typography](02.7%20Typography.html) CSS, Typography 
 
-Hack Your Future, core program, week 4 (javaScript)
+Hack Your Future, core program, week 4 (javaScript: Arrays, Loops, Objects)
  
 
 
