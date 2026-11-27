@@ -10,7 +10,7 @@ Codeacademy (Beginner HTML & CSS) 27 August - 10 September, 2026
 
 [Tables](./HTML/01.3%20Tables.html) HTML, Tables
 
-[Davie's Burgers](./HTML/01.4%20Formats.html)  HTML, Forms
+[Davie's Burgers](./HTML/01.4%20Forms.html)  HTML, Forms
 
 [Sign Up Page](./HTML/01.5%20Form%20Validation.html)  HTML, Form Validation
 
