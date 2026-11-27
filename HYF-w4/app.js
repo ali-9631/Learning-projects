@@ -47,8 +47,8 @@ addTransaction(newTransaction1);
 addTransaction(newTransaction2);
 //addTransaction(newTransaction3);
 
-printAllTransactions();
-printSummary();
+//printAllTransactions();
+//printSummary();
 
 //console.log(getTransactionsByCategory('housing'));
 //console.log(getTransactionsAbove(500));
