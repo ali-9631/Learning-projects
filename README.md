@@ -1,8 +1,8 @@
 # Learning-projects (HTML/CSS)
 
-HYF, week 4, Personal Finance Tracker
++ HYF, week 4, Personal Finance Tracker
 
-Codeacademy (Beginner HTML & CSS) 27 August - 10 September, 2026
++ Codeacademy (Beginner HTML & CSS) 27 August - 10 September, 2026
 
 [The Brown Bear](./HTML/01.1%20Elements%20and%20Structure.html) HTML, Elements and Structure
 
