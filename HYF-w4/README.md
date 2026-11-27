@@ -1,3 +1,1 @@
-HYK, week 4 assignment: Personal Finance Tracker
-
-Exercises: CollatzConjecture & Menu (Arrays, Loops and Objects)
+HYK, Week 4 Assignment: Personal Finance Tracker
