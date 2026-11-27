@@ -47,7 +47,7 @@ function getBalance() {
   return getTotalIncome() - getTotalExpenses();
 }
 
-//Filter by category
+//Filter by category, using a loop
 function getTransactionsByCategory(category) {
   const filteredTransactions = [];
 
@@ -89,7 +89,7 @@ function getNumberOfExpenses() {
   return number;
 }
 
-//Extra: Filter above amount
+//Extra: Filter above amount, using a loop
 function getTransactionsAbove(amount) {
   let filtered = [];
 
@@ -136,7 +136,7 @@ function increaseIncomeWithLoop() {
   return increased;
 }
 
-//Extra: returns a new array with a 20% increase applied to every income amount, using map()
+//Extra: return a new array with a 20% increase applied to every income amount, using map()
 function increaseIncomeWithMap() {
   return transactions.map((transaction) => {
     if (transaction.type === 'income') {
@@ -205,7 +205,173 @@ function printSummary() {
   }
 }
 
+//Bonus: Search transactions by date range using slice()
+function getTransactionsByDateRange1(startDate, endDate) {
+  const startIndex = transactions.findIndex(
+    (transaction) => transaction.date >= startDate,
+  );
+
+  const endIndex = transactions.findIndex(
+    (transaction) => transaction.date > endDate,
+  );
+
+  return transactions.slice(
+    startIndex,
+    endIndex === -1 ? transactions.length : endIndex,
+  );
+}
+
+//Extra: Search transactions by date range using filter()
+function getTransactionsByDateRange2(startDate, endDate) {
+  return transactions.filter(
+    (transaction) =>
+      transaction.date >= startDate && transaction.date <= endDate,
+  );
+}
+
+//Bonus: Group transactions by month using nested objects
+function getTransactionsByMonth() {
+  const groupedTransactions = {};
+
+  for (const transaction of transactions) {
+    const month = transaction.date.slice(0, 7);
+
+    if (!groupedTransactions[month]) {
+      groupedTransactions[month] = {
+        income: [],
+        expenses: [],
+      };
+    }
+
+    if (transaction.type === 'income') {
+      groupedTransactions[month].income.push(transaction);
+    } else {
+      groupedTransactions[month].expenses.push(transaction);
+    }
+  }
+
+  return groupedTransactions;
+}
+
+//Bonus: Calculate average expense per category
+function getAverageExpensePerCategory() {
+  const categoryTotals = {};
+
+  for (const transaction of transactions) {
+    if (transaction.type === 'expense') {
+      const category = transaction.category;
+
+      if (!categoryTotals[category]) {
+        categoryTotals[category] = {
+          total: 0,
+          count: 0,
+        };
+      }
+
+      categoryTotals[category].total += transaction.amount;
+      categoryTotals[category].count++;
+    }
+  }
+
+  const categoryAverages = {};
+
+  for (const category in categoryTotals) {
+    categoryAverages[category] =
+      categoryTotals[category].total / categoryTotals[category].count;
+  }
+
+  return categoryAverages;
+}
+
+//Bonus: Add ability to remove transactions by id
+function removeTransactionById(id) {
+  const index = transactions.findIndex((transaction) => transaction.id === id);
+
+  if (index === -1) {
+    return false;
+  }
+
+  transactions.splice(index, 1);
+
+  return true;
+}
+
+//Bonus: Create a function that finds consecutive expensive months (use while loop)
+function findConsecutiveExpensiveMonths(threshold) {
+  const monthlyExpenses = {};
+
+  // Calculate total expenses per month
+  for (const transaction of transactions) {
+    if (transaction.type === 'expense') {
+      const month = transaction.date.slice(0, 7);
+
+      if (!monthlyExpenses[month]) {
+        monthlyExpenses[month] = 0;
+      }
+
+      monthlyExpenses[month] += transaction.amount;
+    }
+  }
+
+  const months = Object.keys(monthlyExpenses).sort();
+
+  const result = [];
+  let currentGroup = [];
+  let i = 0;
+
+  while (i < months.length) {
+    const month = months[i];
+    const total = monthlyExpenses[month];
+
+    if (total > threshold) {
+      // Check whether this month follows the previous month
+      if (currentGroup.length > 0) {
+        const previousMonth = currentGroup[currentGroup.length - 1].month;
+
+        const previousDate = new Date(`${previousMonth}-01`);
+        const currentDate = new Date(`${month}-01`);
+
+        const isConsecutive =
+          (currentDate.getFullYear() === previousDate.getFullYear() &&
+            currentDate.getMonth() === previousDate.getMonth() + 1) ||
+          (currentDate.getFullYear() === previousDate.getFullYear() + 1 &&
+            previousDate.getMonth() === 11 &&
+            currentDate.getMonth() === 0);
+
+        if (!isConsecutive) {
+          if (currentGroup.length >= 2) {
+            result.push(currentGroup);
+          }
+
+          currentGroup = [];
+        }
+      }
+
+      currentGroup.push({
+        month,
+        totalExpenses: total,
+      });
+    } else {
+      if (currentGroup.length >= 2) {
+        result.push(currentGroup);
+      }
+
+      currentGroup = [];
+    }
+
+    i++;
+  }
+
+  // Don't forget the final group
+  if (currentGroup.length >= 2) {
+    result.push(currentGroup);
+  }
+
+  return result;
+}
+
 module.exports = {
+  transactions,
   addTransaction,
   getTotalIncome,
   getTotalExpenses,
@@ -221,4 +387,10 @@ module.exports = {
   increaseIncomeWithMap,
   printAllTransactions,
   printSummary,
+  getTransactionsByDateRange1,
+  getTransactionsByDateRange2,
+  getTransactionsByMonth,
+  getAverageExpensePerCategory,
+  removeTransactionById,
+  findConsecutiveExpensiveMonths,
 };
