@@ -16,19 +16,19 @@ Codeacademy (Beginner HTML & CSS) 27 August - 10 September, 2026
 
 [About Dogs](./HTML/01.6%20Semantic.html) Semantic HTML
 
-[Vacation Spots](./02.1%20Selectors.html) CSS, Selectors
+[Vacation Spots](./CSS/02.1%20Selectors.html) CSS, Selectors
 
-[Article: Soccer](./02.2%20Visual%20Rules.html) CSS, Visual Rules
+[Article: Soccer](./CSS/02.2%20Visual%20Rules.html) CSS, Visual Rules
 
-[Article: News](02.3%20The%20Box%20Model.html) CSS, The Box Model
+[Article: News](./CSS/02.3%20The%20Box%20Model.html) CSS, The Box Model
 
-[Memory Test](02.4%20Changing%20the%20Box%20Model.html) CSS, Changing the Box Model
+[Memory Test](./CSS/02.4%20Changing%20the%20Box%20Model.html) CSS, Changing the Box Model
 
-[Survey](02.5%20Display%20and%20Positioning.html) CSS, Display and Positioning
+[Survey](./CSS/02.5%20Display%20and%20Positioning.html) CSS, Display and Positioning
 
-[Colors](02.6%20Colors.css) CSS, Colors
+[Colors](./CSS/02.6%20Colors.css) CSS, Colors
 
-[Article: Typography](02.7%20Typography.html) CSS, Typography 
+[Article: Typography](./CSS/02.7%20Typography.html) CSS, Typography 
  
 
 
