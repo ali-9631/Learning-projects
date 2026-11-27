@@ -4,17 +4,17 @@ HYF, week 4, Personal Finance Tracker
 
 Codeacademy (Beginner HTML & CSS) 27 August - 10 September, 2026
 
-[The Brown Bear](./01.1%20Elements%20and%20Structure.html) HTML, Elements and Structure
+[The Brown Bear](./HTML/01.1%20Elements%20and%20Structure.html) HTML, Elements and Structure
 
-[Fashion Blog](./01.2%20Fashion%20Blog.html)  HTML, Elements and Structure
+[Fashion Blog](./HTML/01.2%20Fashion%20Blog.html)  HTML, Elements and Structure
 
-[Tables](./01.3%20Tables.html) HTML, Tables
+[Tables](./HTML/01.3%20Tables.html) HTML, Tables
 
-[Davie's Burgers](./01.4%20Formats.html)  HTML, Forms
+[Davie's Burgers](./HTML/01.4%20Formats.html)  HTML, Forms
 
-[Sign Up Page](./01.5%20Form%20Validation.html)  HTML, Form Validation
+[Sign Up Page](./HTML/01.5%20Form%20Validation.html)  HTML, Form Validation
 
-[About Dogs](./01.6%20Semantic.html) Semantic HTML
+[About Dogs](./HTML/01.6%20Semantic.html) Semantic HTML
 
 [Vacation Spots](./02.1%20Selectors.html) CSS, Selectors
 
