@@ -1,8 +1,8 @@
-# Learning-projects (HTML/CSS)
+# Learning-projects
 
-+ HYF, Week 4, Personal Finance Tracker
++ HYF, Week 4, Personal Finance Tracker (JavaScript)
 
-+ Exercises: CollatzConjecture & Menu (Week 4)
++ Exercises: CollatzConjecture & Menu (Week 4) (JavaScript)
 
 + Codeacademy (Beginner HTML & CSS) 27 August - 10 September, 2026
 
